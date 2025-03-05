@@ -85,6 +85,8 @@ in {
       # Shitty webapps mandatory for work
       prospect-mail
       teams-for-linux
+
+      wine
     ];
 
     stateVersion = "24.11";

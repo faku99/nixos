@@ -19,8 +19,7 @@
     else {};
 
   inherit (config.lib.stylix) colors;
-
-  rgb = color: "rgb(${color})";
+  # rgb = color: "rgb(${color})";
 in {
   imports = [
     ../../programs/hyprlock
@@ -116,7 +115,7 @@ in {
 
         shadow = {
           enabled = true;
-          color = rgb colors.base00;
+          # color = rgb colors.base00;
         };
       };
 
@@ -146,8 +145,8 @@ in {
       general = {
         allow_tearing = false;
         border_size = 2;
-        "col.active_border" = rgb colors.base05;
-        "col.inactive_border" = rgb colors.base01;
+        # "col.active_border" = rgb colors.base05;
+        # "col.inactive_border" = rgb colors.base01;
         gaps_in = 3;
         gaps_out = 5;
         layout = "dwindle";

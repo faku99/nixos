@@ -32,7 +32,10 @@
 
     nix-colors.url = "github:misterio77/nix-colors";
 
-    stylix.url = "github:danth/stylix/f121a142abde1b6aa9738e4c21a330c0ddd4eb70";
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
