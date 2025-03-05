@@ -1,7 +1,9 @@
-{pkgs, ...}: let
+{ pkgs, ... }:
+let
   height = 1440;
   width = 2560;
-in {
+in
+{
   imports = [
     ../../shared
     ../../wm/hyprland
@@ -30,4 +32,21 @@ in {
       primary = true;
     }
   ];
+
+  userConfig = {
+    global.enable = true;
+
+    programs = {
+      browser = {
+        librewolf = {
+          enable = true;
+          defaultBrowser = true;
+        };
+      };
+
+      editor = {
+        vscode.enable = true;
+      };
+    };
+  };
 }
