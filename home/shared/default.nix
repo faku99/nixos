@@ -52,6 +52,7 @@ in {
     ../programs/firefox
     ../programs/git
     ../programs/gpg
+    ../programs/neovim
     ../programs/rbw
     ../programs/vscodium
     ../programs/zsh
@@ -74,9 +75,13 @@ in {
 
     # Shared packages that don't need specific configuration
     packages = with pkgs; [
+      atool
+      unzip
+
       git-crypt
       eza # Better 'ls'
       fd # Better 'find'
+      ripgrep
 
       # Nix-related
       alejandra # Nix formatter
@@ -85,6 +90,8 @@ in {
       # Shitty webapps mandatory for work
       prospect-mail
       teams-for-linux
+
+      wine
     ];
 
     stateVersion = "24.11";
